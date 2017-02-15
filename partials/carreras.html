@@ -1,0 +1,17 @@
+<h1>Carrera</h1>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>CARRERA</th>
+    </thead>
+    <tbody ng-repeat="carrera in carreras | orderBy:'id' | filter:carrera">
+        <tr>
+            <td>
+                {{carrera.id}}
+            </td>
+            <td>
+                {{carrera.nombre | uppercase}}
+            </td>
+        </tr>
+    </tbody>
+</table>
